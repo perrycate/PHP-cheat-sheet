@@ -109,7 +109,30 @@ echo $number > 5 && $number < 42; // Returns True if number is between 5 and 42
 echo $name === "A. S." || $name === "Mr. Q"; // True if name is A. S. or Mr. Q
 echo !($name === "Minchow"); // Returns True as long as $name is not "Minchow"
 
-echo !($number > 12) // Returns True if number is not greater than 12.
+echo !($number > 12); // Returns True if number is not greater than 12.
 //This^ could be rewritten as $number <= 12
+
+
+/**
+ * LOOPS
+ */
+
+// Executes the code between the {}s as long as the condition between the ()s is true.
+$number = 5;
+while($number > 0) {
+    echo "Your number is $number. ";
+    $number --;
+}
+// Prints: "Your number is 5. Your number is 4. Your number is 3. Your number
+// is 2. Your number is 1.
+
+// Does the same thing as the above while loop.
+// within the ()s, first statement sets initial code before the loop starts,
+// second checks that the condition is true before it loops again,
+// third executes after every loop.
+for($number = 5; $number > 0; $number --) {
+    echo "Your number is $number. ";
+    $number --;
+}
 
 ?>
