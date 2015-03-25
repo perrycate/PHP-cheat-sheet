@@ -85,7 +85,7 @@ else {
 }
 
 /*
- * List of Logical Evaluators
+ * List of Logical Operators
  * (the things that can go inside an if statement that return a boolean)
  *
  * >   - First thing greater than the second thing
