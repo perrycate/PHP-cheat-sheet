@@ -135,4 +135,17 @@ for($number = 5; $number > 0; $number --) {
     $number --;
 }
 
+
+/**
+ * WORKING WITH DATABASES
+ */
+
+// Connect to database, store conneciton info in $mysqli
+$connection = new mysqli("username", "user", "password", "database_name");
+
+// Execute query on the conncted database
+$queryResult = $connection->query("SELECT * FROM USERS;"); // Any query can go here.
+
+// TODO add get first row from result as array
+
 ?>
