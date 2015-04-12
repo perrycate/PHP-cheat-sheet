@@ -165,8 +165,8 @@ session_start();
 $_SESSION['favorite_MLP_character'] = "PewDiePie";
 
 // The string between the []s (AKA the Key) can be whatever you want it to be,
-// and you can use that string whenever to retrieve or modify the value it
-// holds, even on a different page entirely.
+// and you can use that string whenever to retrieve or modify the value that
+// $_SESSION['string'] holds, even on a different page entirely.
 
 $pony = $_SESSION['favorite_MLP_character'];
 echo $pony; // prints 'PewDiePie'
