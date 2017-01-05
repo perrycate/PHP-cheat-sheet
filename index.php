@@ -181,7 +181,7 @@ session_unset();
  */
 
 // Connect to database, store conneciton info in $mysqli
-$connection = new mysqli("username", "user", "password", "database_name");
+$connection = new mysqli("hostname", "user", "password", "database_name");
 
 // Execute query on the conncted database
 $queryResult = $connection->query("SELECT * FROM USERS;"); // Any query can go here.
